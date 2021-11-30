@@ -35,6 +35,6 @@ int main(){
   cout << adiff(95,260)<<"\n";
   cout << adiff(90,-90)<<"\n";
   cout << adiff(1000,280)<<"\n";
-  cout << adiff(360,450);
+  cout << adiff(60,244);
 
 }
