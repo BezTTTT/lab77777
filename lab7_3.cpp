@@ -8,13 +8,20 @@ int adiff (int A,int B){
     if(x>=360){
       x= x%360;
     } 
+    if(x > 180 && x<360){
+      x = 360-x;
+    }
     return x ;
   }
   if(B>A){
     x = B-A;
-    if(x > 180){
+    if(x > 180 && x<360){
       x = 360-x;
-    }return x;
+    }
+    if(x>=360){
+      x= x%360;
+    }
+    return x;
   }
   return 0;
 }
@@ -28,5 +35,6 @@ int main(){
   cout << adiff(95,260)<<"\n";
   cout << adiff(90,-90)<<"\n";
   cout << adiff(1000,280)<<"\n";
-  cout << adiff(60,244);
+  cout << adiff(360,450);
+
 }
